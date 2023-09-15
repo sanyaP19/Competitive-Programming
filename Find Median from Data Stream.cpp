@@ -24,13 +24,13 @@ public:
         ios_base::sync_with_stdio(false);
         cin.tie(NULL);
         if(maxheap.size()==minheap.size()){
-            return (double)(maxheap.top()+ minheap.top())/2.0;
+            return (maxheap.top()+ minheap.top())/2.0;
         }
         else if(maxheap.size()>minheap.size()){
-            return (double)maxheap.top();
+            return maxheap.top();
         }
         else{
-            return (double)minheap.top();
+            return minheap.top();
         }
     }
 };
